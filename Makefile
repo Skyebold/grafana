@@ -160,6 +160,7 @@ drone:
 		drone --server https://drone.grafana.net sign --save grafana/grafana;\
 	else\
 		echo "using a wrong drone-cli version, please use version 1.2.4";\
+		exit 1;\
 	fi
 
 help: ## Display this help.
